@@ -1,0 +1,164 @@
+════════════════════════════════════════════════════════════════
+   FREE FIRE BOT - LOCAL COMPUTER এ RUN করতে যে FILES লাগবে
+════════════════════════════════════════════════════════════════
+
+✅ MUST HAVE FILES (অবশ্যই লাগবে):
+─────────────────────────────────────────────────────────────────
+
+📌 Python Code Files:
+  1. main.py                    - Main bot console application
+  2. web_app.py                 - Web dashboard (browser interface)
+  3. network_utils.py           - Network connection handling
+  4. like_utils.py              - Player search & like features
+  5. player_utils.py            - Player information retrieval
+  6. emote_shortcuts.py         - Emote shortcuts configuration
+  7. like_bot_accounts.py       - Multiple bot accounts config
+
+📌 Configuration Files:
+  8. requirements.txt           - Python dependencies (UPDATED with python-dotenv)
+  9. .env.example               - Environment variables template
+  10. .gitignore                - Git ignore rules (includes .env)
+  11. README.md                 - Project documentation
+  12. replit.md                 - Project info & memory
+
+📌 Protocol Buffer Files (generated_proto/ folder):
+  13. generated_proto/__init__.py
+  14. generated_proto/DEcwHisPErMsG_pb2.py
+  15. generated_proto/MajoRLoGinrEq_pb2.py
+  16. generated_proto/MajoRLoGinrEs_pb2.py
+  17. generated_proto/PorTs_pb2.py
+  18. generated_proto/sQ_pb2.py
+
+📌 Like Protocol Files (like_proto/ folder):
+  19. like_proto/__init__.py
+  20. like_proto/send_like_pb2.py
+
+📌 Web Template Files (templates/ folder):
+  21. templates/index.html      - Web dashboard HTML
+
+📌 Setup Guides (NEW):
+  22. LOCAL_SETUP_GUIDE_BANGLA.md  - সম্পূর্ণ setup guide (Bengali)
+  23. ENV_SETUP_GUIDE_BANGLA.md    - .env file setup guide (Bengali)
+  24. REQUIRED_FILES_LIST.txt      - এই file
+
+─────────────────────────────────────────────────────────────────
+
+📂 OPTIONAL FILES (থাকলে ভালো, না থাকলেও চলবে):
+─────────────────────────────────────────────────────────────────
+
+📁 proto/ folder (Original .proto definitions - already compiled):
+  - proto/DecodeWhisperMsg.proto
+  - proto/GetLoginDataRes.proto
+  - proto/MajorLoginReq.proto
+  - proto/MajorLoginRes.proto
+  - proto/recieved_chat.proto
+  - proto/Friends.proto
+  - proto/GenWhisperMsg.proto
+  - proto/Team_msg.proto
+
+📁 attached_assets/ folder:
+  - পুরানো backup files (না থাকলেও চলবে)
+
+─────────────────────────────────────────────────────────────────
+
+🔐 ENVIRONMENT CONFIGURATION (.env FILE):
+─────────────────────────────────────────────────────────────────
+
+📌 আপনাকে নিজে তৈরি করতে হবে:
+  - .env                        - আপনার bot credentials (secret!)
+
+📌 Template দেওয়া আছে:
+  - .env.example                - Copy করে .env বানান
+
+⚠️ IMPORTANT:
+  .env file টি আপনাকে নিজে তৈরি করতে হবে .env.example থেকে!
+  
+  Quick Steps:
+  1. .env.example কপি করুন
+  2. নাম পরিবর্তন করে .env করুন
+  3. আপনার credentials দিন
+  
+  বিস্তারিত: ENV_SETUP_GUIDE_BANGLA.md দেখুন
+
+─────────────────────────────────────────────────────────────────
+
+📋 QUICK DOWNLOAD CHECKLIST:
+─────────────────────────────────────────────────────────────────
+
+একটা ফোল্ডার বানান (যেমন: FreeFire-Bot)
+তারপর এই structure-এ সব ফাইল রাখুন:
+
+FreeFire-Bot/
+├── main.py
+├── web_app.py
+├── network_utils.py
+├── like_utils.py
+├── player_utils.py
+├── emote_shortcuts.py
+├── like_bot_accounts.py
+├── requirements.txt
+├── .env.example               ← Copy করে .env বানান
+├── .env                       ← নিজে তৈরি করুন (credentials রাখার জন্য)
+├── .gitignore
+├── README.md
+├── replit.md
+├── LOCAL_SETUP_GUIDE_BANGLA.md
+├── ENV_SETUP_GUIDE_BANGLA.md
+├── REQUIRED_FILES_LIST.txt
+│
+├── generated_proto/
+│   ├── __init__.py
+│   ├── DEcwHisPErMsG_pb2.py
+│   ├── MajoRLoGinrEq_pb2.py
+│   ├── MajoRLoGinrEs_pb2.py
+│   ├── PorTs_pb2.py
+│   └── sQ_pb2.py
+│
+├── like_proto/
+│   ├── __init__.py
+│   └── send_like_pb2.py
+│
+├── proto/              (Optional)
+│   └── (all .proto files)
+│
+└── templates/
+    └── index.html
+
+─────────────────────────────────────────────────────────────────
+
+🚀 QUICK START STEPS:
+─────────────────────────────────────────────────────────────────
+
+1️⃣ Python 3.9+ install করুন
+   https://www.python.org/downloads/
+
+2️⃣ সব files একটা folder-এ রাখুন
+
+3️⃣ Terminal/CMD open করে folder-এ যান:
+   cd FreeFire-Bot
+
+4️⃣ Dependencies install করুন:
+   pip install -r requirements.txt
+
+5️⃣ 🔐 .env File Setup করুন (RECOMMENDED):
+   a) .env.example কপি করুন:
+      copy .env.example .env    (Windows)
+      cp .env.example .env      (Linux/Mac)
+   
+   b) .env file edit করে credentials দিন:
+      MAIN_BOT_UID=আপনার_UID
+      MAIN_BOT_PASSWORD=আপনার_পাসওয়ার্ড
+   
+   বিস্তারিত: ENV_SETUP_GUIDE_BANGLA.md
+
+   অথবা main.py তে সরাসরি দিন (line 480-481)
+
+6️⃣ Bot চালু করুন:
+   Console: python main.py
+   Web:     python web_app.py (browser: http://localhost:5000)
+
+─────────────────────────────────────────────────────────────────
+
+বিস্তারিত জানতে LOCAL_SETUP_GUIDE_BANGLA.md ফাইল দেখুন!
+
+════════════════════════════════════════════════════════════════

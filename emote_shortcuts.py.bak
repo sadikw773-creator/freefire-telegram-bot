@@ -1,0 +1,419 @@
+
+# Emote Shortcuts Configuration
+# এখানে নতুন shortcut emote সহজে add করতে পারবেন
+
+# ==========================================
+# 1️⃣ DEFAULT PLAYER UIDs
+# ==========================================
+# এখানে default players add করুন (যখন কোনো specific UID দেওয়া হয় না)
+DEFAULT_PLAYER_UIDS = [
+    2026869882,
+    6412757166,
+    2303950929,
+    13663048989,
+    2398416741,
+    1110432191,
+    # নিচে নতুন default UIDs add করুন:
+    # 123456789,
+    # 987654321,
+    # 555666777,
+]
+
+# ==========================================
+# 2️⃣ VARIANT SHORTCUTS
+# ==========================================
+# Short variants এবং তাদের default UIDs
+# নতুন variant add করার জন্য এখানে যোগ করুন
+VARIANT_UIDS = {
+    's': 2303950929,   # secret variant - /p s, /m18 s, etc.
+    'b': 13663048989,# crazy variant - /p c, /m18 c, etc.
+    # নতুন variants add করুন:
+    'c':2398416741,
+
+    'd':1110432191,
+    
+    'n':6412757166,
+    # 'v': 111222333,  # vip variant - /p v, /m18 v, etc.
+    # 'x': 444555666,  # special variant - /p x, /m18 x, etc.
+}
+
+# ==========================================
+# 3️⃣ SPECIAL DEFAULT UIDs
+# ==========================================
+# Specific commands এর জন্য special default UIDs
+SPECIAL_DEFAULTS = {
+    'p': 2026869882,  # /p command এর default UID
+    # নতুন special defaults add করুন:
+    # 'm18': 987654321,  # /m18 এর জন্য special default
+    # 'car': 123456789,  # /car এর জন্য special default
+}
+
+# ==========================================
+# 4️⃣ BASE EMOTE COMMANDS
+# ==========================================
+# Command name -> Emote ID
+# নতুন emote add করার জন্য এখানে যোগ করুন
+BASE_EMOTES = {
+    # Original emotes
+    'p': 909000010,
+    'm18': 909035007,
+    'c': 909000014,
+    'gf': 909000128,
+    'g': 909000143,
+    'm10': 909000081,
+    'flag': 909000034,
+    'car': 909000039,
+    'bike': 909000074,
+    'par': 909038009,
+    'fam': 909000145,
+    'mp4': 909000075,
+    'xm8': 909000085,
+    'hart': 909000045,
+    
+    # Page 1 - Basic Emotes
+    'hi': 909000001,
+    'clap': 909000002,
+    'bye': 909000003,
+    'lol': 909000004,
+    'angry': 909000005,
+    'sorry': 909000006,
+    'thanks': 909000007,
+    'wow': 909000008,
+    'no': 909000009,
+    'yes': 909000011,
+    'cry': 909000012,
+    'dance': 909000013,
+    'kiss': 909000015,
+    'love': 909000016,
+    'salute': 909000017,
+    'sit': 909000018,
+    'sleep': 909000019,
+    'think': 909000020,
+    
+    # Page 2 - Seasonal & Special
+    'fire': 909000021,
+    'ice': 909000022,
+    'rock': 909000023,
+    'guitar': 909000024,
+    'dj': 909000025,
+    'magic': 909000026,
+    'ninja': 909000027,
+    'pirate': 909000028,
+    'robot': 909000029,
+    'samurai': 909000030,
+    'skull': 909000031,
+    'snake': 909000032,
+    'tiger': 909000033,
+    'wings': 909000035,
+    'xmas': 909000036,
+    'zombie': 909000037,
+    'alien': 909000038,
+    'bomb': 909000040,
+    'cake': 909000041,
+    
+    # Page 3 - Action Emotes
+    'cool': 909000042,
+    'dizzy': 909000043,
+    'drink': 909000044,
+    'flex': 909000046,
+    'ghost': 909000047,
+    'gift': 909000048,
+    'gun': 909000049,
+    'happy': 909000050,
+    'hungry': 909000051,
+    'mask': 909000052,
+    'money': 909000053,
+    'muscle': 909000054,
+    'party': 909000055,
+    'peace': 909000056,
+    'photo': 909000057,
+    'point': 909000058,
+    'punch': 909000059,
+    'rage': 909000060,
+    'rain': 909000061,
+    'run': 909000062,
+    'ak47':909000063,
+    # Page 4 - Advanced Emotes
+    'sad': 909000063,
+    'scared': 909000064,
+    'scream': 909000065,
+    'shock': 909000066,
+    'shy': 909000067,
+    'sick': 909000068,
+    'silly': 909000069,
+    'smile': 909000070,
+    'smirk': 909000071,
+    'star': 909000072,
+    'storm': 909000073,
+    'strong': 909000076,
+    'sun': 909000077,
+    'swag': 909000078,
+    'sword': 909000079,
+    'talk': 909000080,
+    'trophy': 909000082,
+    'walk': 909000083,
+    'wave': 909000084,
+    'win': 909000086,
+    
+    # Page 5 - Elite Emotes
+    'angel': 909000087,
+    'back': 909000088,
+    'bad': 909000089,
+    'ball': 909000090,
+    'bear': 909000091,
+    'beer': 909000092,
+    'bird': 909000093,
+    'blow': 909000094,
+    'book': 909000095,
+    'box': 909000096,
+    'bro': 909000097,
+    'butterfly': 909000098,
+    'camera': 909000099,
+    'candle': 909000100,
+    'cat': 909000101,
+    'chain': 909000102,
+    'chair': 909000103,
+    'cheer': 909000104,
+    'circle': 909000105,
+    'cloud': 909000106,
+    
+    # Page 6 - Premium Emotes
+    'coin': 909000107,
+    'crazy': 909000108,
+    'crown': 909000109,
+    'cup': 909000110,
+    'diamond': 909000111,
+    'disco': 909000112,
+    'dog': 909000113,
+    'doll': 909000114,
+    'door': 909000115,
+    'dragon': 909000116,
+    'drum': 909000117,
+    'eagle': 909000118,
+    'earth': 909000119,
+    'egg': 909000120,
+    'electric': 909000121,
+    'evil': 909000122,
+    'eye': 909000123,
+    'fan': 909000124,
+    'fight': 909000125,
+    'fish': 909000126,
+    'flower': 909000127,
+    'fly': 909000129,
+    'frog': 909000130,
+    'fruit': 909000131,
+    'fun': 909000132,
+    'game': 909000133,
+    'gem': 909000134,
+    'gold': 909000135,
+    'grass': 909000136,
+    'guitar2': 909000137,
+    'hand': 909000138,
+    'hat': 909000139,
+    'heart2': 909000140,
+    'help': 909000141,
+    'hero': 909000142,
+    'house': 909000144,
+    'idea': 909000146,
+    'jump': 909000147,
+    'key': 909000148,
+    'king': 909000149,
+    'light': 909000150,
+    'lion': 909000151,
+    'lock': 909000152,
+    'lucky': 909000153,
+    'moon': 909000154,
+    'mountain': 909000155,
+    'music': 909000156,
+    'nature': 909000157,
+    'ocean': 909000158,
+    'panda': 909000159,
+    'pencil': 909000160,
+    'phone': 909000161,
+    'pizza': 909000162,
+    'plant': 909000163,
+    'play': 909000164,
+    'power': 909000165,
+    'pray': 909000166,
+    'prince': 909000167,
+    'queen': 909000168,
+    'rainbow': 909000169,
+    'read': 909000170,
+    'rocket': 909000171,
+    'rose': 909000172,
+    'sad2': 909000173,
+    'santa': 909000174,
+    'school': 909000175,
+    'sea': 909000176,
+    'shine': 909000177,
+    'shop': 909000178,
+    'sing': 909000179,
+    'sky': 909000180,
+    'snow': 909000181,
+    'space': 909000182,
+    'speed': 909000183,
+    'spin': 909000184,
+    'sport': 909000185,
+    'spring': 909000186,
+    'stairs': 909000187,
+    'stamp': 909000188,
+    'stone': 909000189,
+    'study': 909000190,
+    'summer': 909000191,
+    'sunset': 909000192,
+    'super': 909000193,
+    'team': 909000194,
+    'tear': 909000195,
+    'temple': 909000196,
+    'thunder': 909000197,
+    'time': 909000198,
+    'tower': 909000199,
+    'train': 909000200,
+    'tree': 909000201,
+    'universe': 909000202,
+    'victory': 909000203,
+    'video': 909000204,
+    'viking': 909000205,
+    'voice': 909000206,
+    'water': 909000207,
+    'wind': 909000208,
+    'winter': 909000209,
+    'wish': 909000210,
+    'wolf': 909000211,
+    'work': 909000212,
+    'world': 909000213,
+    'write': 909000214,
+    'yoga': 909000215,
+    'yell': 909000216,
+    'zombie2': 909000217,
+    'aim': 909000218,
+    'arrow': 909000219,
+    'attack': 909000220,
+    'axe': 909000221,
+    'baby': 909000222,
+    'balloon': 909000223,
+    'banana': 909000224,
+    'band': 909000225,
+    'baseball': 909000226,
+    'basket': 909000227,
+    'beach': 909000228,
+    'bell': 909000229,
+    'bike2': 909000230,
+    'bird2': 909000231,
+    'birthday': 909000232,
+    'blast': 909000233,
+    'block': 909000234,
+    'boat': 909000235,
+    'bone': 909000236,
+    'boom': 909000237,
+    'bottle': 909000238,
+    'bow': 909000239,
+    'brain': 909000240,
+    'brave': 909000241,
+    'bread': 909000242,
+    'bridge': 909000243,
+    'bright': 909000244,
+    'brush': 909000245,
+    'bubble': 909000246,
+    'build': 909000247,
+    'burger': 909000248,
+    'burn': 909000249,
+    'bus': 909000250,
+    'cactus': 909000251,
+    'camp': 909000252,
+    'candy': 909000253,
+    'cap': 909000254,
+    'card': 909000255,
+    'carrot': 909000256,
+    'castle': 909000257,
+    'catch': 909000258,
+    'cave': 909000259,
+    'celebrate': 909000260,
+    'chef': 909000261,
+    'cherry': 909000262,
+    'chest': 909000263,
+    'chicken': 909000264,
+    'chill': 909000265,
+    'chocolate': 909000266,
+    'chop': 909000267,
+    'cinema': 909000268,
+    'city': 909000269,
+    'clap2': 909000270,
+    'clean': 909000271,
+    'climb': 909000272,
+    'clock': 909000273,
+    'close': 909000274,
+    'clothes': 909000275,
+    'clown': 909000276,
+    'club': 909000277,
+    'coach': 909000278,
+    'coat': 909000279,
+    'coffee': 909000280,
+    'cold': 909000281,
+    'color': 909000282,
+    'comic': 909000283,
+    'compass': 909000284,
+    'computer': 909000285,
+    'confetti': 909000286,
+    'cookie': 909000287,
+    'copper': 909000288,
+    'coral': 909000289,
+    'corn': 909000290,
+    'costume': 909000291,
+    'couch': 909000292,
+    'count': 909000293,
+    'country': 909000294,
+    'couple': 909000295,
+    'courage': 909000296,
+    'course': 909000297,
+    'cowboy': 909000298,
+    'crab': 909000299,
+    'crack': 909000300,
+}
+
+# ==========================================
+# AUTO-GENERATED COMMANDS (DO NOT EDIT)
+# ==========================================
+# System automatically generates all command variants
+SHORTCUT_EMOTES = {}
+
+for command, emote_id in BASE_EMOTES.items():
+    # Base command - check if it has a special default
+    if command in SPECIAL_DEFAULTS:
+        default_uid = SPECIAL_DEFAULTS[command]
+    else:
+        default_uid = None  # Will use DEFAULT_PLAYER_UIDS
+    
+    # Register base command: /p, /m18, /car, etc.
+    SHORTCUT_EMOTES[f'/{command}'] = (emote_id, command.upper(), default_uid)
+    
+    # Register variant commands for each variant
+    for variant_key, variant_uid in VARIANT_UIDS.items():
+        # Creates: /p s, /p c, /m18 s, /m18 c, etc.
+        SHORTCUT_EMOTES[f'/{command} {variant_key}'] = (
+            emote_id, 
+            f'{command.upper()} {variant_key.upper()}', 
+            variant_uid
+        )
+
+# ==========================================
+# 📋 USAGE EXAMPLES
+# ==========================================
+# 
+# নতুন emote add করতে:
+# BASE_EMOTES dictionary তে add করুন:
+# 'dance': 909000099,
+# 
+# এটা automatically তৈরি করবে:
+# /dance → DEFAULT_PLAYER_UIDS
+# /dance s → 2303950929 (secret)
+# /dance c → 13663048989 (crazy)
+#
+# নতুন variant add করতে:
+# VARIANT_UIDS dictionary তে add করুন:
+# 'v': 111222333,
+#
+# এটা automatically সব commands এ apply হবে:
+# /p v → 111222333
+# /m18 v → 111222333
+# /car v → 111222333

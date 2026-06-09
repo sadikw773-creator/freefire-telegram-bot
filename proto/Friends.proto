@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message Friend {
+    int64 ID = 1;
+    string Name = 3;
+}
+
+message Friends {
+    repeated Friend field_1 = 1;
+}

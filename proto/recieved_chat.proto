@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message recieved_chat {
+    message nested {
+        int64 player_uid = 1;
+        string team_session = 14;
+    }
+    int64 packet_type = 4;
+    nested details = 5;
+}

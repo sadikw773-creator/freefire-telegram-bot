@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+message DecodeWhisper {
+    message Nested1 {
+        uint64 uid = 1;
+        uint64 Chat_ID = 2;
+        int32 chat_type = 3;
+        string msg = 4;
+        message Nested2 {
+            string Nickname = 1;
+        }
+        Nested2 Details = 9;
+        message Nested3 {
+            string profile_pic_url = 1;
+        }
+        Nested3 Platform_Info = 13;
+    }
+    Nested1 Data = 5;
+}
