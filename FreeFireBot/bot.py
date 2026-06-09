@@ -106,4 +106,4 @@ app.add_handler(CommandHandler("help", help_command))
 # تشغيل البوت
 if __name__ == "__main__":
     print("✅ البوت يعمل بنجاح...")
-    app.run_polluting()
+    app.run_polling()
